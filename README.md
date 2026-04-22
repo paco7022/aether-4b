@@ -47,21 +47,11 @@ The model excels at:
 | **Training framework** | Unsloth 2026.4.6 + TRL 0.24.0 |
 | **Hardware** | NVIDIA RTX 5090 (32 GB VRAM) |
 | **Training time** | ~81 minutes |
-| **Dataset** | 532 multi-turn conversations (11M+ tokens) |
 | **Context trained** | 8192 tokens |
 | **Loss** | 2.19 (final) |
 | **Epochs** | 2 |
 
-### Dataset Composition
 
-| Source Model | Conversations | Purpose |
-|---|---|---|
-| Gemini 3.1 Pro Preview | 442 | Emotional depth, jealousy/possessiveness, format compliance |
-| Claude Opus 4.7 | 90 | Stylistic diversity, denser prose |
-
-- 15 unique characters across diverse backgrounds and archetypes
-- 52 scenarios spanning 7 tags: conflict, intimate, first_encounter, mundane, dark, intimate_latent, mundane_with_subtext
-- 6 user persona styles: Sparse, Balanced, Shy/Hesitant, Assertive, Descriptive, Reactive
 
 ### Training Hyperparameters
 
@@ -156,8 +146,6 @@ The base model (Gemma 4 E4B-it) is subject to [Google's Gemma Terms of Use](http
 
 - **Google** for Gemma 4 E4B-it
 - **Unsloth** for fast QLoRA fine-tuning
-- **Anthropic** (Claude Opus 4.7) and **Google** (Gemini 3.1 Pro) for synthetic data generation
-- Generated using the TrollLLM inference provider
 
 ## Citation
 
